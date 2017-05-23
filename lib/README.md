@@ -1,20 +1,38 @@
-## Static vs Dynamic Linking for build
+## Static vs Dynamic Build for Library
 ### Static
+Build Command
 ```bash
 gcc -c src/libnumber.c -o libnumber.o
+```
+
+Dependencies
+```bash
 ldd libnumber.o
 # not a dynamic executable
+```
+
+Symbols
+```bash
 nm libnumber.o
 # 0000000000000000 T add
 ```
 
 ### Dynamic
+Build Command
 ```bash
 gcc -shared src/libnumber.c -o libnumber.so
+```
+
+Dependencies
+```bash
 ldd libnumber.so
 # linux-vdso.so.1 (0x00007ffed27e6000)
 # libc.so.6 => /lib64/libc.so.6 (0x00007fea3ca57000)
 # /lib64/ld-linux-x86-64.so.2 (0x0000561144475000)
+```
+
+Symbols
+```bash
 nm libnumber.so
 # 0000000000000650 T add
 # 0000000000201018 B __bss_start
