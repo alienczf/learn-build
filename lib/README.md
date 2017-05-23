@@ -1,6 +1,6 @@
 ## Static vs Dynamic Linking for build
 ### Static
-```
+```bash
 gcc -c src/libnumber.c -o libnumber.o
 ldd libnumber.o
 # not a dynamic executable
@@ -9,7 +9,7 @@ nm libnumber.o
 ```
 
 ### Dynamic
-```
+```bash
 gcc -shared src/libnumber.c -o libnumber.so
 ldd libnumber.so
 # linux-vdso.so.1 (0x00007ffed27e6000)
