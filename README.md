@@ -1,7 +1,7 @@
 # Learn build
 A repo to practice and record fundamentals about build process
 
-1. Week 1: build (clang)
+## Week 1: build (clang)
 please `cd clang` when following the tutorial to avoid path complications
  * Build refers to the **packaging** source files such that they can be executed
  * Includes (in general) these 3 steps:
