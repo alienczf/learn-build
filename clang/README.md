@@ -1,4 +1,4 @@
-# learn-cpp
+# clang build
 
 ## Week 1: Static vs Dynamic building
 
