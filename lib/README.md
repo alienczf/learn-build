@@ -1,4 +1,4 @@
-## Static vs Dynamic Build for Library
+## Week 1: Static vs Dynamic Build for Library
 ### Static
 Build Command
 ```bash
