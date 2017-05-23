@@ -6,6 +6,7 @@ please `cd clang` when following the tutorial to avoid path complications
  * Build refers to the **packaging** source files such that they can be executed
  * Includes (in general) these 3 steps:
    * preprocessing
+
         Expands/Executes Preprocessing directives (lines starting with `#`)
         example:
         ```bash
@@ -24,6 +25,7 @@ please `cd clang` when following the tutorial to avoid path complications
         }
         ```
    * compile
+
         Translates code into executable binary
         ```bash
         gcc -c -I lib/include src/main.c -o main
@@ -53,6 +55,7 @@ please `cd clang` when following the tutorial to avoid path complications
         ```
 
    * link
+
         A linker steps in and resolve these dependencies.
         There are two ways that links can be done, static or dynamic.
         ```bash
