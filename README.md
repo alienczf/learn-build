@@ -5,7 +5,7 @@ A repo to practice and record fundamentals about build process
 please `cd clang` when following the tutorial to avoid path complications
  * Build refers to the conversion of source files into executables
  * Includes (in general) these 3 steps:
-   1. **Preprocessing
+   1. **Preprocessing**
 
         Expands/Executes Preprocessing directives (lines starting with `#`)
 
@@ -34,7 +34,7 @@ please `cd clang` when following the tutorial to avoid path complications
           return left + right;
         }
         ```
-   2. Compiling
+   2. **Compiling**
 
         Translates code into executable binary
         ```bash
@@ -64,7 +64,7 @@ please `cd clang` when following the tutorial to avoid path complications
         ...
         ```
 
-   3. Linking
+   3. **Linking**
 
         A linker steps in and resolve these dependencies.
         There are two ways that links can be done, static or dynamic.
