@@ -3,15 +3,25 @@ A repo to practice and record fundamentals about build process
 
 ## Week 1: build (clang)
 please `cd clang` when following the tutorial to avoid path complications
- * Build refers to the **packaging** source files such that they can be executed
+ * Build refers to the conversion of source files into executables
  * Includes (in general) these 3 steps:
-   * preprocessing
+   1. **Preprocessing
 
         Expands/Executes Preprocessing directives (lines starting with `#`)
+
         example:
         ```bash
         cpp lib/src/libnumber.c
         ```
+
+        input:
+        ```c
+        int add(int left, int right){
+          return left + right;
+        }
+        ```
+
+        output:
         ```c
         # 1 "lib/src/libnumber.c"
         # 1 "<built-in>"
@@ -24,7 +34,7 @@ please `cd clang` when following the tutorial to avoid path complications
           return left + right;
         }
         ```
-   * compile
+   2. Compiling
 
         Translates code into executable binary
         ```bash
@@ -54,7 +64,7 @@ please `cd clang` when following the tutorial to avoid path complications
         ...
         ```
 
-   * link
+   3. Linking
 
         A linker steps in and resolve these dependencies.
         There are two ways that links can be done, static or dynamic.
